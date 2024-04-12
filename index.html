@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/83c43f5d07.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    Ganna Player
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="pcontainer">
+        <div class="container">
+            <nav id="cnav">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <img id="aa" src="alag_assman.jpg" alt="">
+            
+            <h1 id="name">Alag Aasmaan</h1>
+            <p id="singer">~Anuv Jain</p>
+            <audio id="song" src="alag_aasmaan.mp3"></audio>
+            <input type="range" value="0" id="range">
+            <div class="controls">
+                <div onclick="previousSong()"><i class="fa-solid fa-backward" id="before"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="play"></i></div>
+                <div onclick="nextSong()"><i class="fa-solid fa-forward" id="next"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
